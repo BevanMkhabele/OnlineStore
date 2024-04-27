@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <style>
+        /* CSS styles for product display */
+        /* Styles remain the same */
+        .main {
+            /* Styles for the main container */
+        }
+        .hz1 {
+            display: flex; /* Use flexbox to arrange children */
+            /* Styles for horizontal arrangement */
+        }
+        .div1, .div2, .div3 {
+            flex: 1; /* Each div takes equal space */
+            /* Styles for individual divs */
+            margin: 10px; /* Add some margin between divs */
+        }
+        .additional-details {
+            display: none; /* Hide additional details by default */
+        }
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <div class="hz1">
+        <div class="div1">
+            <!-- Product 1 -->
+            <div class="product">
+                <h2>Product Name 1</h2>
+                <img src="canva.jpg" alt="Product Image">
+                <p class="description">
+                    Product description goes here. Write a detailed and engaging description highlighting the key features and benefits of the product.
+                </p>
+                <button onclick="showDetails('details1')">View Details</button>
+                <div class="additional-details" id="details1">
+                    <p class="price">Price: $XX.XX</p>
+                    <p class="availability">Availability: In Stock</p>
+                    <p class="sizes">Available Sizes: S, M, L, XL</p>
+                    <p class="colors">Available Colors: Red, Blue, Green</p>
+                    <p class="variants">Product Variants: Variant 1, Variant 2, Variant 3</p>
+                    <p class="reviews">Customer Reviews and Ratings: 4.5 stars based on 100 reviews</p>
+                    <p class="related-products">Related Products: <a href="#">Product 1</a>, <a href="#">Product 2</a>, <a href="#">Product 3</a></p>
+                    <p class="promotional-info">Promotional Information: Special offer - Buy one get one free!</p>
+                    <p class="social-sharing">Social Sharing: <a href="#">Share on Facebook</a>, <a href="#">Tweet on Twitter</a>, <a href="#">Pin on Pinterest</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="div2">
+            <!-- Product 2 -->
+            <div class="product">
+                <h2>Product Name 2</h2>
+                <img src="canva.jpg" alt="Product Image">
+                <p class="description">
+                    Product description goes here. Write a detailed and engaging description highlighting the key features and benefits of the product.
+                </p>
+                <button onclick="showDetails('details2')">View Details</button>
+                <div class="additional-details" id="details2">
+                    <!-- Additional details for Product 2 -->
+                </div>
+            </div>
+        </div>
+        <div class="div3">
+            <!-- Product 3 -->
+            <div class="product">
+                <h2>Product Name 3</h2>
+                <img src="canva.jpg" alt="Product Image">
+                <p class="description">
+                    Product description goes here. Write a detailed and engaging description highlighting the key features and benefits of the product.
+                </p>
+                <button onclick="showDetails('details3')">View Details</button>
+                <div class="additional-details" id="details3">
+                    <!-- Additional details for Product 3 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Duplicate Products -->
+    <div class="hz1">
+        <div class="div1">
+            <!-- Product 4 -->
+            <div class="product">
+                <h2>Product Name 4</h2>
+                <img src="canva.jpg" alt="Product Image">
+                <p class="description">
+                    Product description goes here. Write a detailed and engaging description highlighting the key features and benefits of the product.
+                </p>
+                <button onclick="showDetails('details4')">View Details</button>
+                <div class="additional-details" id="details4">
+                    <!-- Additional details for Product 4 -->
+                </div>
+            </div>
+        </div>
+        <div class="div2">
+            <!-- Product 5 -->
+            <div class="product">
+                <h2>Product Name 5</h2>
+                <img src="canva.jpg" alt="Product Image">
+                <p class="description">
+                    Product description goes here. Write a detailed and engaging description highlighting the key features and benefits of the product.
+                </p>
+                <button onclick="showDetails('details5')">View Details</button>
+                <div class="additional-details" id="details5">
+                    <!-- Additional details for Product 5 -->
+                </div>
+            </div>
+        </div>
+        <div class="div3">
+            <!-- Product 6 -->
+            <div class="product">
+                <h2>Product Name 6</h2>
+                <img src="canva.jpg" alt="Product Image">
+                <p class="description">
+                    Product description goes here. Write a detailed and engaging description highlighting the key features and benefits of the product.
+                </p>
+                <button onclick="showDetails('details6')">View Details</button>
+                <div class="additional-details" id="details6">
+                    <!-- Additional details for Product 6 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showDetails(id) {
+        var details = document.getElementById(id);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
